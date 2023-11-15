@@ -52,6 +52,7 @@ function App() {
     <div className="container">
       <Header />
       <Menu />
+      <Footer />
     </div>
   );
 }
@@ -93,6 +94,14 @@ function Pizza({ pizzaObj }) {
         <span> {pizzaObj.price} </span>
       </div>
     </li>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="footer">
+      <p>We're happy to welcome you</p>
+    </footer>
   );
 }
 
