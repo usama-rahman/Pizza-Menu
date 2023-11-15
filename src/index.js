@@ -56,7 +56,14 @@ function App() {
   );
 }
 
-function Header() {}
+function Header() {
+  const style = {};
+  return (
+    <header className="header">
+      <h1 style={style}> Pizza Co.</h1>
+    </header>
+  );
+}
 
 function Menu() {
   return (
