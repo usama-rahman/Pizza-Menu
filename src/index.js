@@ -50,10 +50,13 @@ const pizzaData = [
 function App() {
   return (
     <div className="container">
+      <Header />
       <Menu />
     </div>
   );
 }
+
+function Header() {}
 
 function Menu() {
   return (
@@ -69,6 +72,20 @@ function Menu() {
         ))}
       </ul>
     </main>
+  );
+}
+
+function Pizza({ pizzaObj }) {
+  console.log(pizzaObj);
+  return (
+    <li className="sold-out">
+      <img src={pizzaObj.photoName} alt={pizzaObj.photoName} />
+      <div>
+        <h3> {pizzaObj.name} </h3>
+        <p> {pizzaObj.ingredients} </p>
+        <span> {pizzaObj.price} </span>
+      </div>
+    </li>
   );
 }
 
